@@ -1,36 +1,37 @@
 body {
-     text-align: center;
+  text-align: center;
 }
 
 .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border:10px solid black;
-    margin: 1em;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1em;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.yellow{
-    background-color: #ff8c00;
+.red {
+  background-color: #d95980;
 }
-.red{
-    background-color: #b33277;
+.yellow {
+  background-color: #f99b45;
 }
-.green{
-    background-color: #39a0bd;
+.green {
+  background-color: #63aac0;
 }
-.purple{
-    background-color:#5971eb ;
+.purple {
+  background-color: #819ff9;
 }
 
-.flash{
-    background-color: azure;
+.gameFlash {
+  background-color: white;
 }
-.userFlash{
-    background-color: rgb(9, 65, 46);
+
+.userFlash {
+  background-color: green;
 }
