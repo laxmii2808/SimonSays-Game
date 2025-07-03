@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Says Game</title>
-    <link rel="stylesheet" href="02_style.css" />
-  </head>
-  <body>
-    <h1>Simon Says Game</h1>
-    <h3>Press Any Key to Start</h3>
-    <h4>Highest Score: 0</h4>
-    <div class="btn-container">
-      <div class="line1">
-        <div class="btn red" type="button" id="red"></div>
-        <div class="btn yellow" type="button" id="yellow"></div>
-      </div>
-      <div class="line2">
-        <div class="btn green" type="button" id="green"></div>
-        <div class="btn purple" type="button" id="purple"></div>
-      </div>
-    </div>
-    <script src="02_app.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simon Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="heading">Simon Says Game</h1>
+        <button onclick="toggleRules()">How to Play</button>
+
+          <div id="how-to-play">
+            <h3 style="background-color: #d6361d; color: white; padding: 10px; border-radius: 5px;">How to Play</h3>
+            <hr />
+            <ul style="padding: 0;">
+              <li style="background-color: white; text-align: start; font-weight: bold; margin-bottom: 10px; padding: 12px; border-radius: 5px; border-left: 6px solid #f44336; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #333;">
+                Click "Start" to begin the game.
+              </li>
+              <li style="background-color: white; text-align: start; font-weight: bold; margin-bottom: 10px; padding: 12px; border-radius: 5px; border-left: 6px solid #ff9800; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #333;">
+                Watch the flashing buttons carefully.
+              </li>
+              <li style="background-color: white; text-align: start; font-weight: bold; margin-bottom: 10px; padding: 12px; border-radius: 5px; border-left: 6px solid #4caf50; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #333;">
+                Repeat the pattern by clicking the buttons in the same order.
+              </li>
+              <li style="background-color: white; text-align: start; font-weight: bold; margin-bottom: 10px; padding: 12px; border-radius: 5px; border-left: 6px solid #2196f3; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #333;">
+                The pattern gets longer every round.
+              </li>
+              <li style="background-color: white; text-align: start; font-weight: bold; margin-bottom: 10px; padding: 12px; border-radius: 5px; border-left: 6px solid #e91e63; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #333;">
+                One wrong click and it's game over!
+              </li>
+            </ul>
+          </div>
+
+
+        <h2>Press any key to start the game</h2>
+        <button class="start">START</button>
+        <div class="btn-container">
+            <div class="line-on">
+                <div class="btn red" type="button" id="red">1</div>
+                <div class="btn yellow" type="button" id="yellow">2</div>
+            </div>
+            <div class="line-two">
+                <div class="btn green" type="button" id="green">3</div>
+                <div class="btn blue" type="button" id="blue">4</div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
 </html>

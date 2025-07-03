@@ -1,37 +1,119 @@
-body {
+*{
+    text-align: center;
+    background-color: rgb(207, 163, 188);
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 7px solid black;
+    border-radius: 20px;
+    margin: 1.75rem;
+    box-shadow: 5px 5px 17px black;
+    font-weight: 800;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.flash{
+    background-color: wheat;
+    box-shadow: 2px 2px 10px red !important;
+}
+
+
+#heading{
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+}
+
+.userflash{
+    background-color: darkred;
+    box-shadow: none !important;
+}
+
+@media (max-width: 524px) {
+    .btn{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20%;
+        border: 10px solid rgba(33, 33, 33, 0.564);
+        margin: 1.4rem;
+        padding: .5em;
+        /* box-shadow: 2px 2px 10px rgb(255, 255, 255); */
+
+    }
+    .btn>p{
+        font-size: 1.5rem;
+    }
+    .red, .green{
+        margin-bottom: 2.48em !important;    
+    }
+}
+
+.highscore{
+    font-size: 1.8rem;
+    color: blue;
+    height: 2rem;
+    line-height: 20px;
+}
+
+.start{
+    height: 2rem;
+    width: 6rem;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 251, 251);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 5px 5px 17px black
+}
+#how-to-play {
+  background-color:white; /* vibrant yellow */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto; /* center horizontally */
+  width: 60%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.btn {
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
-  border: 10px solid black;
-  margin: 1em;
+#how-to-play h3 {
+  /* vibrant purple */
+  color: black;
+  background-color:white;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-.red {
-  background-color: #d95980;
-}
-.yellow {
-  background-color: #f99b45;
-}
-.green {
-  background-color: #63aac0;
-}
-.purple {
-  background-color: #819ff9;
-}
-
-.gameFlash {
-  background-color: white;
-}
-
-.userFlash {
-  background-color: green;
+#how-to-play ul {
+  list-style-type: decimal;
+  background-color:white;
+  padding-left: 20px;
+  color: black;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0;
+  
 }
